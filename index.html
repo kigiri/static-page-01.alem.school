@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="gr__01_alem_school" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="dns-prefetch" href="https://01.alem.school/github.com">
+    
+    <link crossorigin="anonymous" rel="preload" as="font" href="https://01.alem.school/assets/fonts/IBMPlexSans-light-latin.woff2">
+    <link crossorigin="anonymous" rel="preload" as="font" href="https://01.alem.school/assets/fonts/IBMPlexMono-regular-latin.woff2">
+    <link crossorigin="anonymous" rel="preload" as="font" href="https://01.alem.school/assets/fonts/IBMPlexMono-light-latin.woff2">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="preload" as="image" href="https://01.alem.school/assets/img/logo.png">
+    <link crossorigin="anonymous" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqD9f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKg/X/CoP1zQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACoP1/wqD9f8AAAAACoP1/wqD9f8AAAAAAAAAAAAAAAAKg/X/CoP1/wAAAAAAAAAAAAAAAAAAAAAAAAAACoP1/wqD9f8AAAAAAAAAAAqD9c0Kg/X/AAAAAAAAAAAAAAAAAAAAAAqD9f8Kg/X/AAAAAAAAAAAAAAAACoP1/wqD9f8AAAAAAAAAAAAAAAAKg/V+CoP1/wqD9X4AAAAAAAAAAAAAAAAAAAAACoP1/wqD9f8AAAAACoP1/wqD9f8AAAAAAAAAAAAAAAAAAAAAAAAAAAqD9f8Kg/XNAAAAAAAAAAAAAAAAAAAAAAAAAAAKg/X/CoP1/wqD9f8Kg/X/AAAAAAAAAAAAAAAAAAAAAAAAAAAKg/XNCoP1/wAAAAAAAAAAAAAAAAAAAAAAAAAACoP1/wqD9f8AAAAACoP1/wqD9f8AAAAAAAAAAAAAAAAAAAAACoP1fgqD9f8Kg/V+AAAAAAAAAAAAAAAACoP1/wqD9f8AAAAAAAAAAAAAAAAKg/X/CoP1/wAAAAAAAAAAAAAAAAAAAAAKg/X/CoP1zQAAAAAAAAAACoP1/wqD9f8AAAAAAAAAAAAAAAAAAAAAAAAAAAqD9f8Kg/X/AAAAAAAAAAAAAAAACoP1/wqD9f8AAAAACoP1/wqD9f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqD9c0Kg/X/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACoP1/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD9/wAA/P8AAOTnAADM8wAAnvkAAD58AAA+fAAAn3kAAM8zAADnJwAA/z8AAP+/AAD//wAA//8AAA==" rel="icon" type="image/x-icon">
+    <title>alem 01</title>
+  </head>
+  <body data-gr-c-s-loaded="true">
+    <div class="trame"></div>
+    <div class="logo"></div>
+    <div class="page-container">
+      <div class="left">
+        <div>
+          <div class="title welcome">
+            <span id="Welcome"></span>
+          </div>
+          <div class="text">
+            <span id="Zone01"></span>
+            <br>
+            <br>
+            1) <span id="instruction-1"></span><br>
+            2) <span id="instruction-2"></span><br>
+            3) <span id="instruction-3"></span><br>
+            <br>
+            <span id="GitHubWillBeUsed"></span>
+          </div>
+        </div>
+        <div class="contact">
+          <div>
+              <span id="WantToKnow"></span>
+          </div>
+          <a id="contact-link" target="_blank" href="https://alem.school/">
+            <span class="arrow">→</span>
+            <span id="Contact"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="right">
+        <button id="sign-in" class="bgPurple hoverWhite" style="opacity: 1; cursor: pointer;">
+          <span id="SignIn"></span>
+        </button>
+        <div class="or">
+          <span id="Or"></span>
+        </div>
+        <a href="https://github.com/join" target="_blank">
+          <button class="bgGrey2 hoverWhite" style="opacity: 1; cursor: pointer;">
+            <span id="CreateGitHub"></span>
+          </button>
+        </a>
+      </div>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+        crossorigin="anonymous"></script>
+    <script>
+        var getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = window.location.search.substring(1),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                }
+            }
+        };
+        var current_lang = "ru"
+        var lang = {
+          "Welcome": {
+            "en": "Welcome to 01 !",
+            "ru": "Добро пожаловать в 01 !",
+            "kz": "01-ге қош келдіңіз!"
+          },
+          "Zone01": {
+            "en": "01 is an educative platform to learn code.",
+            "ru": "01 - это образовательная платформа для изучения программирования.",
+            "kz": "01 - бағдарламалауға арналған білім беру алаңы."
+          },
+          "SignInToGetOnBoard": {
+            "en": "To get on board, please sign in with your Github account.",
+            "ru": "Чтобы зайти на платформу, зайдите через свой GitHub аккаунт.",
+            "kz": "Платформаға кіру үшін, GitHub аккаунтпеңізбен кіріңіз."
+          },
+          "instruction-1": {
+            "en": "Create and sign in with your GitHub account.",
+            "ru": "Создай и зайди через GitHub аккаунт.",
+            "kz": "GitHub аккаунт жасаңыз және кіріңіз."
+          },
+          "instruction-2": {
+            "en": "Take the online test",
+            "ru": "Пройди онлайн-тест",
+            "kz": "Онлайн-тест тапсырыңыз"
+          },
+          "instruction-3": {
+            "en": "Wait for results.",
+            "ru": "Жди результатов",
+            "kz": "Нәтижелер күтіңіз"
+          },
+          "GitHubWillBeUsed": {
+            "en": "This account will be used during your whole training at 01.",
+            "ru": "Аккаунт будет использован на протяжении всего обучения в 01.",
+            "kz": "Аккаунт 01 мектебіндегі бүкіл оқу мерзімі кезінде пайдаланылатын болады."
+          },
+          "WantToKnow": {
+            "en": "Want to know more about us?",
+            "ru": "Хочешь узнать о нас больше?",
+            "kz": "Біз туралы көбірек білгіңіз келе ме?"
+          },
+          "Contact": {
+            "en": "Contact us",
+            "ru": "Контакты",
+            "kz": "Байланыс"
+          },
+          "SignIn": {
+            "en": "Sign in with GitHub",
+            "ru": "Войти через GitHub",
+            "kz": "GitHub арқылы кіру"
+          },
+          "Or": {
+            "en": "or",
+            "ru": "или",
+            "kz": "әлде"
+          },
+          "CreateGitHub": {
+            "en": "Create a GitHub account",
+            "ru": "Создать аккаунт в GitHub",
+            "kz": "GitHub аккаунт жасау"
+          },
+        }
+        var tmp_lang = getUrlParameter("lang");
+        if (tmp_lang != null) {
+          current_lang = tmp_lang;
+        }
+        for (key in lang) {
+          $("#"+key).text(lang[key][current_lang]);
+        }
+    </script>
+  </body>
+</html>
