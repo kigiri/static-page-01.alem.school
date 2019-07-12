@@ -257,13 +257,13 @@
         width: 100vw;
         height: 100vh;
         opacity: 0.1;
-        background: center / cover url(../assets/img/01-trame.svg);
+        background: center / cover url(assets/img/01-trame.svg);
       }
 
       .logo {
         width: 60px;
         height: 60px;
-        background: center / cover url(../assets/img/logo.png);
+        background: center / cover url(assets/img/logo.png);
         position: absolute;
         top: 30px;
         left: 30px;
@@ -619,7 +619,10 @@
           current_lang = tmp_lang;
         }
         for (key in lang) {
-          document.getElementById(key).text(lang[key][current_lang]);
+          var elem = document.getElementById(key);
+          if (elem != null) {
+            elem.innerHTML = lang[key][current_lang];
+          }
         }
     </script>
   </body>
