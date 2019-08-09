@@ -1,5 +1,5 @@
 // handle translation
-var lang = localStorage.lang = location.split(/[&?]lang=(ru|kz|en)/)[1] || localStorage.lang || 'ru'
+var lang = localStorage.lang = String(location).split(/[&?]lang=(ru|kz|en)/)[1] || localStorage.lang || 'ru'
 function translate(id, text) {
   var elem = document.getElementById(id)
   elem && text[lang] && (elem.textContent = text[lang])
@@ -58,7 +58,7 @@ style.innerHTML = 'body div.logo {width:60px;height:60px}'
 function ym() { ym.a.push(arguments) }
 ym.a = []
 ym.l = 1*new Date()
-var s = document.createElement('script')
+var yms = document.createElement('script')
 yms.async = 1
 yms.src = 'https://mc.yandex.ru/metrika/tag.js'
 
