@@ -41,11 +41,11 @@ translate("sign-in", {
   "ru": "Войти через GitHub",
   "kz": "GitHub арқылы кіру"
 })
-translate("Or", {
+translate("or", {
   "ru": "или",
   "kz": "әлде"
 })
-translate("CreateGitHub", {
+translate("join", {
   "ru": "Создать аккаунт в GitHub",
   "kz": "GitHub аккаунт жасау"
 })
