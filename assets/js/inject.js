@@ -14,8 +14,8 @@ translate("zone-01", {
   "kz": "01 - бағдарламалауға арналған білім беру алаңы."
 })
 translate("instruction-1", {
-  "ru": "Создай и зайди через GitHub аккаунт.",
-  "kz": "GitHub аккаунтты жасап кіріңіз."
+  "ru": "Создай и зайди через Git аккаунт.",
+  "kz": "Git аккаунтты жасап кіріңіз."
 })
 translate("instruction-2", {
   "ru": "Пройди онлайн-тест",
@@ -38,16 +38,16 @@ translate("contact", {
   "kz": "Байланыс"
 })
 translate("sign-in", {
-  "ru": "Войти через GitHub",
-  "kz": "GitHub арқылы кіру"
+  "ru": "Войти через Git",
+  "kz": "Git арқылы кіру"
 })
 translate("or", {
   "ru": "или",
   "kz": "әлде"
 })
 translate("join", {
-  "ru": "Создать аккаунт в GitHub",
-  "kz": "GitHub аккаунт жасау"
+  "ru": "Создать аккаунт в Git",
+  "kz": "Git аккаунт жасау"
 })
 
 // inject css
